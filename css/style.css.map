@@ -1,0 +1,18 @@
+{
+    "version": 3,
+    "mappings": "AGAA,OAAO,CAAC,wGAAI;AACZ,OAAO,CAAC,iFAAI;AADZ,OAAO,CAAC,wGAAI;AACZ,OAAO,CAAC,iFAAI;AFDZ,AAAA,CAAC,CAAA;EACG,OAAO,EAAC,CAAC;EACT,MAAM,EAAC,CAAC;CACX;;AGDD,AACI,eADW,CACX,EAAE,CAAA;EACE,WAAW,EDDD,YAAY,EAAE,UAAU;ECElC,UAAU,EAAE,MAAM;EAClB,SAAS,EAAE,KAAK;EAChB,WAAW,EAAE,GAAG;CACnB;;AANL,AAOI,eAPW,CAOX,IAAI,CAAA;EACA,WAAW,EDNC,SAAS,EAAE,UAAU;ECOjC,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,GAAG;EAChB,KAAK,EAAE,IAAI;CACd;;AAZL,AAaI,eAbW,CAaX,CAAC,CAAA;EACG,WAAW,EDZC,SAAS,EAAE,UAAU;ECajC,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,GAAG;CAEjB;;AKpBL,AAAA,IAAI,CAAA;EACA,WAAW,EAAE,GAAG;EAChB,YAAY,EAAE,GAAG;CACpB",
+    "sources": [
+        "../sass/style.scss",
+        "../sass/base/_reset.scss",
+        "../sass/base/_colors.scss",
+        "../sass/base/_typografy.scss",
+        "../sass/components/_titulo-inicial.scss",
+        "../sass/base/_typografy.scss",
+        "../sass/components/_buttons.scss",
+        "../sass/layout/_header.scss",
+        "../sass/layout/_footer.scss",
+        "../sass/layout/_main.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
