@@ -1,0 +1,35 @@
+@import "../base/typografy";
+
+.mini-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    gap: 1em;
+    img{
+        width: 100px;
+    }
+    p{
+        text-align: center;
+    }
+}
+
+
+.card-servicios{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    
+    margin: 15px;
+    padding: 25px;
+    border-radius: 20px;
+
+    h3{
+        text-align: left;
+        margin-bottom: 15px;
+    }
+    a{
+        text-decoration: none;
+        font-family: $fuente-primaria;
+        color: black;
+    }
+    
+}

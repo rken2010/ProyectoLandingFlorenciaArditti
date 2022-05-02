@@ -4,4 +4,39 @@
 $fuente-primaria: 'Montserrat', sans-serif;
 $fuente-secundaria: 'Poppins', sans-serif;
 
+h2{
+    font-family: $fuente-primaria;
+    text-align: center;  
+    font-size: 1.5em;     
+    font-weight: 700; 
+}
+
+h3{
+    font-family: $fuente-primaria;
+    text-align: center;  
+    font-size: 1.2em;     
+    font-weight: 700; 
+}
+
+span{
+    font-family: $fuente-secundaria;
+    text-align: center;
+    font-weight: 100;
+    color: grey;        
+}
+p{
+    font-family: $fuente-secundaria;
+    font-weight: 400;
+    font-size: 1em;
+    text-align: justify;
+
+}
+
+.superindice{
+    vertical-align: super;
+    text-align: center;
+    font-family: $fuente-secundaria;
+    font-size: 0.8em;
+}
+
 
