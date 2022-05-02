@@ -4,6 +4,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -12,13 +16,19 @@
 h2 {
   font-family: "Montserrat", sans-serif;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.6em;
   font-weight: 700;
 }
 
 h3 {
   font-family: "Montserrat", sans-serif;
   text-align: center;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
   font-size: 1.2em;
   font-weight: 700;
 }
@@ -42,18 +52,40 @@ p {
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-size: 0.8em;
+}
+
+body {
+  font-size: 70%;
+}
+
+@media screen and (min-width: 47em) {
+  body {
+    font-size: 80%;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  body {
+    font-size: 100%;
+  }
 }
 
 h2 {
   font-family: "Montserrat", sans-serif;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.6em;
   font-weight: 700;
 }
 
 h3 {
   font-family: "Montserrat", sans-serif;
   text-align: center;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
   font-size: 1.2em;
   font-weight: 700;
 }
@@ -77,6 +109,22 @@ p {
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-size: 0.8em;
+}
+
+body {
+  font-size: 70%;
+}
+
+@media screen and (min-width: 47em) {
+  body {
+    font-size: 80%;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  body {
+    font-size: 100%;
+  }
 }
 
 .titulo-inicial h2 {
@@ -102,13 +150,19 @@ p {
 h2 {
   font-family: "Montserrat", sans-serif;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.6em;
   font-weight: 700;
 }
 
 h3 {
   font-family: "Montserrat", sans-serif;
   text-align: center;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
   font-size: 1.2em;
   font-weight: 700;
 }
@@ -132,6 +186,100 @@ p {
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-size: 0.8em;
+}
+
+body {
+  font-size: 70%;
+}
+
+@media screen and (min-width: 47em) {
+  body {
+    font-size: 80%;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  body {
+    font-size: 100%;
+  }
+}
+
+.bt {
+  font-size: 1em;
+  padding: 1em;
+  background-color: black;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  display: block;
+}
+
+.bt-form {
+  width: 7.2em;
+  height: 2em;
+  font-size: 1em;
+  background-color: black;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  display: block;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+span {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-weight: 100;
+  color: grey;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  text-align: justify;
+}
+
+.superindice {
+  vertical-align: super;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8em;
+}
+
+body {
+  font-size: 70%;
+}
+
+@media screen and (min-width: 47em) {
+  body {
+    font-size: 80%;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  body {
+    font-size: 100%;
+  }
 }
 
 .mini-card {
@@ -179,9 +327,152 @@ p {
   color: black;
 }
 
-main {
-  margin-left: 2em;
-  margin-right: 2em;
+footer img {
+  width: 100px;
+}
+
+footer h3 {
+  font-size: 0.75em;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+header {
+  margin-bottom: 2em;
+}
+
+header img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 120px;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+span {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-weight: 100;
+  color: grey;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  text-align: justify;
+}
+
+.superindice {
+  vertical-align: super;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8em;
+}
+
+body {
+  font-size: 70%;
+}
+
+@media screen and (min-width: 47em) {
+  body {
+    font-size: 80%;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  body {
+    font-size: 100%;
+  }
+}
+
+.contacto h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  text-align: left;
+}
+
+.contacto .formulario__contacto {
+  background-color: gold;
+  border-radius: 15px;
+  padding: 1em;
+}
+
+@media screen and (min-width: 768px) {
+  .contacto {
+    margin-top: 55px;
+    border-radius: 15px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+footer .mapa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body {
+  margin-left: 4em;
+  margin-right: 4em;
 }
 
 .carrousel {
@@ -208,5 +499,129 @@ main {
   gap: 1.2em;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
+}
+
+@media screen and (min-width: 768px) {
+  .atencion {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container_card {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    gap: 10px;
+  }
+}
+
+.contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contacto .seguimos__contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2em;
+}
+
+.contacto .seguimos__contacto--datos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 35px 1fr;
+      grid-template-columns: 35px 1fr;
+}
+
+.contacto .seguimos__contacto--redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contacto .seguimos__contacto--redes .redes {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contacto .formulario__contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.contacto .formulario__contacto input {
+  display: block;
+}
+
+.contacto .formulario__contacto textarea {
+  display: block;
+}
+
+.contacto .formulario__contacto label {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .contacto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contacto .seguimos__contacto {
+    width: 50%;
+  }
+  .contacto .seguimos__contacto--redes .redes {
+    margin-top: 15px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .contacto .seguimos__contacto--redes img {
+    width: 75px;
+    margin-left: 25px;
+    border-radius: 40px;
+    padding: 2%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,23 @@
+@import "../base/colors";
+@import "../base/typografy";
+
+.bt{
+    font-size: 1em;
+    padding: 1em;
+    background-color: $color-primario;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    display: block;
+}
+
+.bt-form{
+    width: 7.2em;
+    height: 2em;
+    font-size: 1em;
+    background-color: $color-primario;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    display: block;
+}

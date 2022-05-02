@@ -1,0 +1,26 @@
+@import "../base/colors";
+@import "../base/typografy";
+
+.contacto{
+    
+    h4{
+        font-family: $fuente-secundaria;
+        font-size: 1em;
+        text-align: left;
+    }
+   
+    .formulario__contacto{
+        background-color: gold;
+        border-radius: 15px;
+        padding: 1em;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+.contacto{
+    margin-top: 55px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+}

@@ -7,13 +7,19 @@ $fuente-secundaria: 'Poppins', sans-serif;
 h2{
     font-family: $fuente-primaria;
     text-align: center;  
-    font-size: 1.5em;     
+    font-size: 1.6em;     
     font-weight: 700; 
 }
 
 h3{
     font-family: $fuente-primaria;
     text-align: center;  
+    font-size: 1.5em;     
+    font-weight: 700; 
+}
+
+h4{
+    font-family: $fuente-primaria;
     font-size: 1.2em;     
     font-weight: 700; 
 }
@@ -37,6 +43,20 @@ p{
     text-align: center;
     font-family: $fuente-secundaria;
     font-size: 0.8em;
+}
+
+body{
+    font-size:70%;
+    }
+@media screen and (min-width:47em){
+    body{
+    font-size:80%;
+    }
+}
+@media screen and (min-width:60em){
+    body{
+    font-size:100%;
+   }
 }
 
 

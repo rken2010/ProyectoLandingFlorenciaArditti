@@ -52,7 +52,7 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt natus fugiat laborum velit. Cum, repellendus aperiam dicta incidunt officiis officia?
           </p></div>
           <div>
-            <button>Quiero saber mas</button>
+            <button class="bt">Quiero saber mas</button>
           </div>
         </section>
       <!-- CARROUSEL -->
@@ -113,7 +113,7 @@
                 <p class="superindice">Conoce nuestros servicios</p>
                 <h2>Servicios Digitales a la medida de tu negocio</h2>
             </div>
-            <div>
+            <div class="container_card">
                 <div class="card-servicios">
                     <h3>Comunity managment</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nesciunt nobis quidem laboriosam obcaecati consequatur?</p>
@@ -136,37 +136,81 @@
                 </div>
             </div>
         </section>
-        
-        <!-- modify this form HTML and place wherever you want your form -->
-    <form
-    action="https://formspree.io/f/mgedpnel"
-    method="POST"
-    >
-    
-        <label class="form-label" for="email">
-        Dejanos tu mail:
-        <input type="email" name="email" id="email" class="form-control" placeholder="mail@ejemplo.com">
-        </label>
-    
-    
-    <!-- your other form fields go here -->
-    <button type="submit">Enviar</button>
-    </form>
 
+        <section>
+        <div class="titulo">
+          <p class="superindice">Recibí atención personalizada</p>
+          <h2>Charlemos!</h2>
+        </div>
+            <div class="contacto">
+              <div class="seguimos__contacto">
+                    <div class="seguimos__contacto--titulo">
+                      <h4>Get in touch</h4>
+                      <p>Si tenes alguna duda o consulta completa el formulario para que me contacte con vos!</p>
+                    </div>
+                <div class="seguimos__contacto--datos">
+                  <img src="./img/telephone-icono.svg" alt="telefono">
+                   <p>+54-1234-5678</p>
+                  
+                </div>
+                <div class="seguimos__contacto--redes">
+                  <h4>Conectate en mis redes</h4>
+                  <div class="redes">
+                    <img src="./img/instagram-icono.svg" alt="instagram">
+                    <img src="./img/linkedin-icono.svg" alt="linkedn">
+                    <img src="./img/facebook-icono.svg" alt="facebook">
+                    <img src="./img/youtube-icono.svg" alt="youtube">
+                  </div>
+                </div>
+              </div>
+
+                  <!-- modify this form HTML and place wherever you want your form -->
+              <div class="formulario__contacto">
+                      <form
+                      action="https://formspree.io/f/mgedpnel"
+                      method="POST"
+                      >
+                          <label class="form-label" for="text">
+                          Tu nombre:
+                          <input type="text" name="text" id="text" class="form-control" placeholder="nombre completo">
+                          </label>
+                          <label class="form-label" for="text">
+                            Tu telefono:
+                            <input type="tel" name="telefono" id="telefono" class="form-control">
+                            </label>
+                          <label class="form-label" for="email">
+                          Dejanos tu mail:
+                          <input type="email" name="email" id="email" class="form-control" placeholder="mail@ejemplo.com">
+                          </label>
+                          <label class="form-label" for="mensaje">
+                            Contanos que necesitas:
+                            <textarea name="mensaje" id="mensaje" cols="40" rows="10"></textarea>
+                          </label>
+                      
+                      <!-- your other form fields go here -->
+                      <button type="submit" class="bt-form">Enviar</button>
+                      </form>
+              </div>
+            </div>
+
+  </section>
     </main>
     <footer>
+      <div>
+        <img src="./img/Logo-footer.png" alt="logo">
+    </div>
+    <div class="mapa">
+      <h3>MAPA DEL SITIO</h3>
+        <a href="#">Home</a>
+        <a href="#">Servicios</a>
+        <a href="#">E-Book</a>
+        <a href="#">Sobre mi</a>
+        <a href="#">Contacto</a>
+    </div>
 
     </footer>
     <!-- BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-    <footer>
-        <div>
-            <img src="./img/Logo-footer.png" alt="logo">
-        </div>
-        <div>
-
-        </div>
-    </footer>
 </body>
 </html>

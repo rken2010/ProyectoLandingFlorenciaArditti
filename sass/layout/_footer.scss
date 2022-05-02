@@ -1,0 +1,16 @@
+footer{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:25px;
+    margin-top: 25px;
+    .mapa{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
