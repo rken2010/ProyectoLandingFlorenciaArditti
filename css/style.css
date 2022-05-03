@@ -13,6 +13,11 @@
   margin: 0;
 }
 
+section{
+  margin-top: 50px;
+  border-bottom: 2px solid black;
+}
+
 h2 {
   font-family: "Montserrat", sans-serif;
   text-align: center;
