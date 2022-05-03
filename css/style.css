@@ -13,6 +13,11 @@
   margin: 0;
 }
 
+section{
+  margin-top: 50px;
+  border-bottom: 2px solid black;
+}
+
 h2 {
   font-family: "Montserrat", sans-serif;
   text-align: center;
@@ -225,6 +230,17 @@ body {
   display: block;
 }
 
+.bt-pc{
+  font-size: 1em;
+  padding: 1em;
+  background-color: black;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+}
+
 h2 {
   font-family: "Montserrat", sans-serif;
   text-align: center;
@@ -325,6 +341,42 @@ body {
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   color: black;
+}
+
+.conteiner-pc{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.2em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.img-pc{
+  width: 30%;
+}
+
+.titulo-pc{
+  width: 60%;
+}
+
+.card-tr{
+  width: 25%;
+}
+
+.titulo-tr p{
+  margin-right: 0;
+}
+
+.img-tr{
+  text-align: center;
+}
+
+.img-tr img{
+  width: 400px;
+  height: 400px;
 }
 
 footer img {
