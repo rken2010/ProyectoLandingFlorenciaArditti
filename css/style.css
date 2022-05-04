@@ -439,6 +439,22 @@ body {
   }
 }
 
+.clientes .mini-card {
+  background-image: url(../../img/background-comment.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.clientes .mini-card h4 {
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .mini-card {
+    background-size: cover;
+  }
+}
+
 footer {
   display: -ms-grid;
   display: grid;
@@ -518,6 +534,107 @@ body {
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     gap: 10px;
+  }
+}
+
+.ebook {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ebook .container-img {
+  margin-bottom: 15px;
+  width: 70%;
+}
+
+.ebook .container-img img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .ebook {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    gap: 4em;
+  }
+  .ebook .titulo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ebook .container-img {
+    padding: 15px;
+    width: 85%;
+  }
+}
+
+.clientes .opiniones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clientes .opiniones .mini-card {
+  width: 230px;
+  height: 150px;
+  padding: 25px;
+  margin: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .container_opniones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container_opniones .opiniones .mini-card {
+    width: auto;
+    margin: 15px;
+    padding: 15px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container_opniones {
+    gap: 30px;
+  }
+  .container_opniones .mini-card {
+    margin: 65px;
+    padding: 35px;
   }
 }
 

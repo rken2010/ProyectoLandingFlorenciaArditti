@@ -1,0 +1,39 @@
+.clientes{
+   .opiniones{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+        .mini-card{
+            width: 230px;
+            height: 150px;
+            padding: 25px;
+            margin: 15px;
+        }
+   } 
+}
+
+@media screen and (min-width: 768px){
+    .container_opniones{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        .opiniones{
+            .mini-card{
+                width: auto;
+                margin: 15px;
+                padding: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .container_opniones{
+        gap: 30px;
+        .mini-card{
+            margin: 65px;
+            padding: 35px;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.ebook{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .container-img{
+        margin-bottom: 15px;
+        width: 70%;
+        img{
+            width: 100%;  
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .ebook{
+        flex-direction: row;
+        justify-content: space-around;
+        gap:4em;
+       .titulo{
+           justify-content: center;
+           align-items: center;
+       }
+       .container-img{
+           padding: 15px;
+           width: 85%;  
+       }   
+    }
+}
