@@ -1,39 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import "./colors";
 
-$fuente-primaria: 'Montserrat', sans-serif;
-$fuente-secundaria: 'Poppins', sans-serif;
+$fuente-primaria: 'Abril Fatface', cursive;
+$fuente-secundaria: 'Montserrat', sans-serif;
 
 h2{
     font-family: $fuente-primaria;
     text-align: center;  
-    font-size: 1.6em;     
+    font-size: 2.2em;     
     font-weight: 700; 
 }
 
 h3{
     font-family: $fuente-primaria;
     text-align: center;  
-    font-size: 1.5em;     
+    font-size: 2em;     
     font-weight: 700; 
 }
 
 h4{
     font-family: $fuente-primaria;
-    font-size: 1.2em;     
+    font-size: 1.7em;     
     font-weight: 700; 
+}
+h5{
+    font-family: $fuente-secundaria;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+
 }
 
 span{
     font-family: $fuente-secundaria;
     text-align: center;
     font-weight: 100;
-    color: grey;        
+    color: $color-primario;        
 }
 p{
     font-family: $fuente-secundaria;
     font-weight: 400;
-    font-size: 1em;
+    font-size: 1.2em;
     text-align: justify;
 
 }

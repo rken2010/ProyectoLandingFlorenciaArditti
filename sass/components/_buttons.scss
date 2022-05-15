@@ -11,13 +11,46 @@
     display: block;
 }
 
+.bt-propuestas{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 30%;
+    height: 25%;
+    padding:10px;
+    background-color: $color-secundario;
+    border-radius: 24px;
+    border: 0;
+    color: white;
+    font-family: $fuente-secundaria;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 12px;
+
+}
+
+.bt-descarga{
+    background-color: white;
+    width: 100px;
+    height: 35px;
+    border: 1px solid $color-primario;
+    border-radius: 21px;
+}
+
 .bt-form{
     width: 7.2em;
     height: 2em;
-    font-size: 1em;
+    font-size: 1.2em;
     background-color: $color-primario;
     color: white;
     border: 0;
-    border-radius: 10px;
+    border-radius: 20px;
     display: block;
+    font-weight: 700;
+    
+}
+
+.boton--container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
