@@ -52,7 +52,14 @@ footer {
       flex-direction: column;
      }
   
-  .links { grid-area: links; }
+  .links { 
+      grid-area: links; 
+      display: flex;
+      flex-direction: column;
+      a{
+          display: block;
+      }
+    }
   
   .contacto { 
       grid-area: contacto;

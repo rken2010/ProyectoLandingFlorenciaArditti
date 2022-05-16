@@ -1,11 +1,24 @@
+@import "../base/margin--padding";
+
 .sobre_mi{
-    margin-left: 1.5em;
-    margin-right: 1.5em;
+    margin: $margenes;
     .avatar{
         display: flex;
         align-items: center;
         justify-content: center;
         margin-top: 1em;
         margin-bottom: 1em;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .sobre_mi{
+        display: grid;
+        grid-template-areas: " avatar  titulo";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr;
+    
+    .avatar{ grid-area: avatar;}
+    .titulo{ grid-area: titulo;}
     }
 }

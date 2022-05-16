@@ -1,0 +1,25 @@
+.sobre_mi{
+    .avatar{
+        img{
+            width: 60%;
+            height: auto;
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .sobre_mi{ 
+        .avatar{
+            img{
+                width: 70%;
+                height: auto;
+            }
+        }
+        .titulo{
+            background-image: url("../img/background_sobre-mi.png");
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+    }
+}

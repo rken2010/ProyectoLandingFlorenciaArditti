@@ -199,6 +199,16 @@ body {
           justify-content: center;
 }
 
+@media screen and (min-width: 768px) {
+  .bt-propuestas {
+    height: 62px;
+    width: 273px;
+    left: 502px;
+    top: 2141px;
+    border-radius: 37.67045211791992px;
+  }
+}
+
 h2 {
   font-family: "Abril Fatface", cursive;
   text-align: center;
@@ -360,14 +370,14 @@ header a:hover {
 }
 
 @media screen and (min-width: 768px) {
-  a {
+  header a {
     position: relative;
     text-decoration: none;
   }
-  a:hover {
+  header a:hover {
     color: #000;
   }
-  a::before {
+  header a::before {
     content: "";
     position: absolute;
     display: block;
@@ -383,9 +393,26 @@ header a:hover {
     transition: transform 0.3s ease;
     transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   }
-  a:hover::before {
+  header a:hover::before {
     -webkit-transform: scaleX(1);
             transform: scaleX(1);
+  }
+}
+
+.sobre_mi .avatar img {
+  width: 60%;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .sobre_mi .avatar img {
+    width: 70%;
+    height: auto;
+  }
+  .sobre_mi .titulo {
+    background-image: url("../img/background_sobre-mi.png");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
@@ -592,6 +619,17 @@ footer .links {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: links;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .links a {
+  display: block;
 }
 
 footer .contacto {
@@ -799,8 +837,7 @@ footer .contacto {
 }
 
 .sobre_mi {
-  margin-left: 1.5em;
-  margin-right: 1.5em;
+  margin: 25px;
 }
 
 .sobre_mi .avatar {
@@ -815,6 +852,28 @@ footer .contacto {
           justify-content: center;
   margin-top: 1em;
   margin-bottom: 1em;
+}
+
+@media screen and (min-width: 768px) {
+  .sobre_mi {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: " avatar  titulo";
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 2fr;
+        grid-template-rows: 2fr;
+  }
+  .sobre_mi .avatar {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: avatar;
+  }
+  .sobre_mi .titulo {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: titulo;
+  }
 }
 
 .contacto {
