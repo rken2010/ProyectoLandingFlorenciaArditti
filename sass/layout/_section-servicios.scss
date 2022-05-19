@@ -1,8 +1,21 @@
+@import "../base/margin--padding";
+
 @media screen and (min-width: 768px) { 
    .container_card{
+        margin-left: $margenes;
+        margin-right: $margenes;
         display: grid;
         grid-template-columns:  1fr 1fr;
         grid-template-rows: 1fr 1fr;
         gap: 10px;
     }
 }
+
+@media screen and (min-width: 1024px) { 
+    .container_card{
+      
+         grid-template-columns:  1fr 1fr 1fr 1fr;
+         grid-template-rows: 1fr;
+         gap: 10px;
+     }
+ }

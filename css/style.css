@@ -690,13 +690,38 @@ footer .contacto {
 }
 
 .manejo {
-  margin-left: 1.2em;
-  margin-right: 1.2em;
+  margin: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .manejo {
+    margin: 50px;
+  }
 }
 
 .carrousel {
-  margin-top: 35px;
-  margin-bottom: 35px;
+  margin: 35px;
+}
+
+@media screen and (min-width: 768px) {
+  .carrousel {
+    width: 736px;
+    height: 628px;
+    margin: 0 auto;
+  }
+  .carrousel img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 736px;
+    height: 628px;
+  }
 }
 
 .atencion {
@@ -723,12 +748,24 @@ footer .contacto {
 
 @media screen and (min-width: 768px) {
   .container_card {
+    margin-left: 25px;
+    margin-right: 25px;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+    gap: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container_card {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
     gap: 10px;
   }
 }
@@ -804,7 +841,7 @@ footer .contacto {
 }
 
 @media screen and (min-width: 768px) {
-  .container_opniones {
+  .container_opiniones {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -819,7 +856,7 @@ footer .contacto {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .container_opniones .opiniones .mini-card {
+  .container_opiniones .opiniones .mini-card {
     width: auto;
     margin: 15px;
     padding: 15px;
@@ -827,10 +864,14 @@ footer .contacto {
 }
 
 @media screen and (min-width: 1024px) {
-  .container_opniones {
-    gap: 30px;
+  .clientes {
+    padding: 50px;
   }
-  .container_opniones .mini-card {
+  .clientes .container_opiniones {
+    gap: 30px;
+    margin: 50px;
+  }
+  .clientes .container_opiniones .mini-card {
     margin: 65px;
     padding: 35px;
   }
@@ -937,6 +978,15 @@ footer .contacto {
   .contacto .img-flor img {
     display: block;
     margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contenedor--contacto {
+    padding: 50px;
+  }
+  .contenedor--contacto .titulo {
+    margin-bottom: 25px;
   }
 }
 /*# sourceMappingURL=style.css.map */

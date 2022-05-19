@@ -1,4 +1,11 @@
+@import "../base/margin--padding";
+
 .manejo{
-    margin-left: 1.2em;
-    margin-right: 1.2em;
+    margin: $margenes;
+}
+
+@media screen and (min-width: 768px) {
+    .manejo{
+        margin: $margenes-lg;
+    }
 }

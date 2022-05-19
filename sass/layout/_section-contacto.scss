@@ -1,3 +1,5 @@
+@import "../base/margin--padding";
+
 .contacto{
     display: flex;
     flex-direction: column;
@@ -46,4 +48,13 @@
             }
         }
     }
+}
+
+@media screen and (min-width: 1024px){
+    .contenedor--contacto{
+        padding: $margenes-lg;
+        .titulo{
+            margin-bottom: 25px;
+        }
     }
+}

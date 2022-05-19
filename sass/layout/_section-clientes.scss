@@ -1,10 +1,6 @@
 @import "../base/colors";
 
 .clientes{
-   
-    
-    
-
    .opiniones{
        display: flex;
        flex-direction: column;
@@ -19,7 +15,7 @@
 }
 
 @media screen and (min-width: 768px){
-    .container_opniones{
+    .container_opiniones{
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -35,11 +31,16 @@
 }
 
 @media screen and (min-width: 1024px){
-    .container_opniones{
-        gap: 30px;
-        .mini-card{
-            margin: 65px;
-            padding: 35px;
+    .clientes{
+        padding: $margenes-lg;
+        
+        .container_opiniones{
+            gap: 30px;
+            margin: $margenes-lg;
+            .mini-card{
+                margin: 65px;
+                padding: 35px;
+            }
         }
     }
 }

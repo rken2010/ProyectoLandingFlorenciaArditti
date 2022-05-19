@@ -2,7 +2,21 @@
 $margin:35px;
 
 .carrousel{
-    margin-top: $margin;
-    margin-bottom: $margin;
+    margin: $margin;
 }
 
+@media screen and (min-width: 768px){
+    .carrousel{
+       width: 736px;
+       height: 628px;
+       margin: 0 auto;
+       
+        img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 736px;
+            height: 628px;
+        }
+    }
+}
