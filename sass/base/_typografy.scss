@@ -51,7 +51,7 @@ p{
     vertical-align: super;
     text-align: center;
     font-family: $fuente-secundaria;
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 body{
@@ -64,7 +64,7 @@ body{
 }
 @media screen and (min-width:60em){
     body{
-    font-size:100%;
+    font-size:110%;
    }
 }
 

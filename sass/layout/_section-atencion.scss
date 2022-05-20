@@ -1,4 +1,4 @@
-.atencion{
+.container_minicards{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -8,8 +8,27 @@
 }
 
 @media screen and (min-width: 768px){
-    .atencion{
+    .container_minicards{
      display: flex;
      justify-content: space-around;
     }
+}
+
+@media screen and (min-width: 1024px){
+    .atencion {  
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.1fr 1fr;
+        gap: 20px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          ". . titulo titulo titulo titulo titulo titulo titulo . ."
+          ". . atencion atencion atencion atencion atencion atencion atencion . .";
+      }
+      
+      .titulo { grid-area: titulo; }
+      
+      .container_minicards { grid-area: atencion; }
+      
+      
 }

@@ -6,17 +6,10 @@ $margin:35px;
 }
 
 @media screen and (min-width: 768px){
-    .carrousel{
-       width: 736px;
-       height: 628px;
-       margin: 0 auto;
-       
-        img{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 736px;
-            height: 628px;
-        }
+    .carrousel{  
+        width: 736px;
+        height: auto;
+       margin: $margin auto;
+ 
     }
 }
