@@ -40,7 +40,7 @@ h5 {
 }
 
 span {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Abril Fatface", cursive;
   text-align: center;
   font-weight: 100;
   color: #F464BF;
@@ -57,11 +57,12 @@ p {
   vertical-align: super;
   text-align: center;
   font-family: "Montserrat", sans-serif;
-  font-size: 1em;
+  font-size: 2em;
 }
 
 body {
   font-size: 70%;
+  margin: 0px 100px;
 }
 
 @media screen and (min-width: 47em) {
@@ -105,7 +106,7 @@ h5 {
 }
 
 span {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Abril Fatface", cursive;
   text-align: center;
   font-weight: 100;
   color: #F464BF;
@@ -306,7 +307,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 110px;
+  width: 120px;
   gap: 1em;
 }
 
@@ -316,6 +317,7 @@ body {
 
 .mini-card p {
   text-align: center;
+  font-size: 17px;
 }
 
 .card-servicios {
@@ -716,7 +718,9 @@ footer .contacto {
       grid-template-rows: 0.7fr 1.3fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-      grid-template-areas: ". . titulo-inicial titulo-inicial titulo-inicial titulo-inicial titulo-inicial titulo-inicial titulo-inicial . ." ". . titulo-inicial titulo-inicial titulo-inicial titulo-inicial titulo-inicial titulo-inicial titulo-inicial . ." ". . boton--container boton--container boton--container boton--container boton--container boton--container boton--container . .";
+      grid-template-areas: ". . titulo-inicial titulo-inicial titulo-inicial titulo-inicial titulo-inicial titulo-inicial titulo-inicial . ."
+ ". . titulo-inicial titulo-inicial titulo-inicial titulo-inicial titulo-inicial titulo-inicial titulo-inicial . ."
+ ". . boton--container boton--container boton--container boton--container boton--container boton--container boton--container . .";
 }
 
 .titulo-inicial {
@@ -729,7 +733,9 @@ footer .contacto {
       grid-template-rows: 1fr max-content 1fr;
   gap: 40px 0px;
   grid-auto-flow: row;
-      grid-template-areas: "h2 h2" "p p" "p p";
+      grid-template-areas: "h2 h2"
+ "p p"
+ "p p";
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 3;
@@ -860,10 +866,16 @@ p {
 
 @media screen and (min-width: 1024px) {
   .container_card {
+    /*
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
+    gap: 10px;*/
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     gap: 10px;
   }
 }
@@ -1088,3 +1100,35 @@ p {
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+
+/*modificaciones Matias*/
+
+#span{
+  font-family: "Abril Fatface", cursive;
+  text-align: center;
+  font-weight: 100;
+  color: #F464BF;
+}
+
+section{
+  margin-top: 100px;
+}
+
+.mini-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 120px;
+  gap: 1em;
+}
