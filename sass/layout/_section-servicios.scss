@@ -12,10 +12,26 @@
 }
 
 @media screen and (min-width: 1024px) { 
-    .container_card{
+    #servicios {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: max-content max-content max-content;
+        gap: 45px 0px;
+        grid-auto-flow: row;
+        justify-content: stretch;
+        align-content: stretch;
+        justify-items: stretch;
+        align-items: stretch;
+        grid-template-areas:
+          ". . titulo titulo titulo titulo titulo titulo titulo . ."
+          ". . container_card container_card container_card container_card container_card container_card container_card . ."
+          ". . boton--container boton--container boton--container boton--container boton--container boton--container boton--container . .";
+      }
       
-         grid-template-columns:  1fr 1fr 1fr 1fr;
-         grid-template-rows: 1fr;
-         gap: 10px;
-     }
+      .titulo { grid-area: titulo; }
+      
+      .container_card { grid-area: container_card; }
+      
+      .boton--container { grid-area: boton--container; }
+      
+      
  }

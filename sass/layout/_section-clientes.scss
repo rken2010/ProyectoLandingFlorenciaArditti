@@ -33,6 +33,9 @@
 @media screen and (min-width: 1024px){
     .clientes{
         padding: $margenes-lg;
+        .superindice{
+            font-size: 1em;
+        }
         
         .container_opiniones{
             gap: 30px;
