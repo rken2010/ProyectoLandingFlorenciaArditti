@@ -21,13 +21,11 @@
 
 @media screen and (min-width: 1024px) { 
    .container_card{
-        margin-left: $margenes;
-        margin-right: $margenes;
-        display: grid;
-        grid-template-columns:  1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr ;
-        place-content: center;
-        gap: 45px;
+      
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -35,7 +33,7 @@
     #servicios {  display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: max-content max-content max-content;
-        gap: 35px 0px;
+        gap: 25px 0px;
         grid-auto-flow: row;
         justify-content: stretch;
         align-content: stretch;
@@ -43,7 +41,7 @@
         align-items: stretch;
         grid-template-areas:
           ". . titulo titulo titulo titulo titulo titulo titulo . ."
-          ". . container_card container_card container_card container_card container_card container_card container_card . ."
+          ". container_card container_card container_card container_card container_card container_card container_card container_card container_card ."
           ". . boton--container boton--container boton--container boton--container boton--container boton--container boton--container . .";
       }
       

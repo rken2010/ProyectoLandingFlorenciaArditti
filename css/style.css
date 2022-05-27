@@ -579,6 +579,14 @@ body {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .card-servicios {
+    width: 570px;
+    height: 300px;
+    padding: 25px;
+  }
+}
+
 footer img {
   width: 100px;
 }
@@ -1333,16 +1341,19 @@ p {
 
 @media screen and (min-width: 1024px) {
   .container_card {
-    margin-left: 25px;
-    margin-right: 25px;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
-    place-content: center;
-    gap: 45px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1355,7 +1366,7 @@ p {
     -ms-grid-rows: max-content max-content max-content;
         grid-template-rows: -webkit-max-content -webkit-max-content -webkit-max-content;
         grid-template-rows: max-content max-content max-content;
-    gap: 35px 0px;
+    gap: 25px 0px;
     grid-auto-flow: row;
     -webkit-box-pack: stretch;
         -ms-flex-pack: stretch;
@@ -1366,7 +1377,7 @@ p {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
-        grid-template-areas: ". . titulo titulo titulo titulo titulo titulo titulo . ." ". . container_card container_card container_card container_card container_card container_card container_card . ." ". . boton--container boton--container boton--container boton--container boton--container boton--container boton--container . .";
+        grid-template-areas: ". . titulo titulo titulo titulo titulo titulo titulo . ." ". container_card container_card container_card container_card container_card container_card container_card container_card container_card ." ". . boton--container boton--container boton--container boton--container boton--container boton--container boton--container . .";
   }
   .titulo {
     -ms-grid-row: 1;
@@ -1376,8 +1387,8 @@ p {
   }
   .container_card {
     -ms-grid-row: 2;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 7;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 9;
     grid-area: container_card;
   }
   .boton--container {
