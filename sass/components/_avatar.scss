@@ -1,0 +1,38 @@
+
+
+.avatar { 
+    img {
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 30px;
+    clip-path: circle(calc(50% - 40px));
+    --_p: 100px;
+    --_g1: radial-gradient(50% 50%,#e71e24 90%,#0000); /* color 1 */
+    --_g2: radial-gradient(50% 50%,#fcc010 90%,#0000); /* color 2 */
+    --_g3: radial-gradient(50% 50%,#85c341 90%,#0000); /* color 3 */
+    --_g4: radial-gradient(50% 50%,#eb2288 90%,#0000); /* color 4 */
+    background:
+       var(--_g1) calc(20% - var(--_p)) calc(20% - var(--_p)),
+       var(--_g2) calc(80% + var(--_p)) calc(10% - var(--_p)),
+       var(--_g3) calc(80% + var(--_p)) calc(80% + var(--_p)),
+       var(--_g3) 55%                   calc(12% - var(--_p)),
+       var(--_g1) calc(18% - var(--_p)) calc(88% + var(--_p)),
+       var(--_g2) calc(10% - var(--_p)) calc(70% + var(--_p)),
+       var(--_g2) calc(88% + var(--_p)) 40%,
+       var(--_g1) calc(82% + var(--_p)) calc(28% - var(--_p)),
+       var(--_g4) calc(12% - var(--_p)) 30%,
+       var(--_g4) 65%                   calc(85% + var(--_p)),
+       var(--_g3) calc(20% - var(--_p)) calc(10% - var(--_p)),
+       var(--_g4) calc(30% - var(--_p)) calc(85% + var(--_p));
+    background-size: 15px 15px, 20px 20px, 30px 30px;
+    background-repeat: no-repeat;
+    filter: grayscale(80%);
+    transition: .5s;
+  }
+  img:hover {
+    filter: grayscale(0%);
+    clip-path: circle(50%);
+    --_p: 0px;
+  }
+}
+

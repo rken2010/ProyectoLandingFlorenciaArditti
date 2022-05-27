@@ -19,16 +19,16 @@
 
 .card-servicios{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    
-    margin: 15px;
     padding: 25px;
     border-radius: 20px;
 
     h3{
         font-family: $fuente-secundaria;
         color: $color-secundario;
-        text-align: left;
+        text-align: center;
         margin-bottom: 15px;
     }
+    p{ text-align: justify; }
     a{
         text-decoration: none;
         font-family: $fuente-primaria;
@@ -41,3 +41,48 @@
     
 }
 
+@media screen and (min-width: 768px){
+    .card-servicios{
+       
+        
+        width: 355px;
+        height: 276px;
+        
+        
+        padding: 25px;
+    
+        h3{
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+        }
+        p{ 
+            size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: match-parent;
+           
+        }
+        a{
+            text-decoration: none;
+            font-family: $fuente-primaria;
+            color: black;
+        }
+        img{
+            width: 39.23px;
+            height: 40px;
+        }
+        
+    }
+    .mini-card{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+    }
+}

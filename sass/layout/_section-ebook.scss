@@ -15,18 +15,33 @@
     }
 }
 
-@media screen and (min-width: 768px){
-    .ebook{
-        flex-direction: row;
-        justify-content: space-around;
-        gap:4em;
-       .titulo{
-           justify-content: center;
-           align-items: center;
-       }
-       .container-img{
-           padding: 15px;
-           width: 85%;  
-       }   
-    }
+@media screen and (min-width: 1024px){
+    .ebook {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;    
+        align-items: center;
+        grid-template-areas:
+          ". . titulo titulo titulo titulo titulo titulo container-img container-img . .";
+        p{
+            
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: justify;
+            margin-top: 42px;
+            margin-bottom: 42px;
+        }
+        
+        .container-img { 
+            grid-area: container-img;
+            width: 544px;
+            height: 485.71px;
+        img{ 
+            width: 544px;
+            height: 485.71px;
+        }
+
+        }
+    }  
 }

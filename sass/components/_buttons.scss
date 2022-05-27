@@ -5,36 +5,89 @@
     width: 117.54px;
     height: 32px;
     background-color: $color-primario;
+    border: 2px solid $color-primario; /* tamaño y color de borde */
     color: white;
-    border: 0;
     border-radius: 19px;
-    display: block;
+    
     font-weight: 700;
+    position: relative;
+        z-index: 1;
+        overflow: hidden;
+        display: inline-block;
+
+    &:hover{
+        color: $color-primario; /* color de fuente hover */
+    }
+    &::after{
+        content: "";
+        background: #fff; /* color de fondo hover */
+        position: absolute;
+        z-index: -1;
+        padding: 16px 20px;
+        display: block;
+        top: 0;
+        bottom: 0;
+        left: -100%;
+        right: 100%;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+    }
+    &:hover::after{
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+        }
 }
 
 .bt-propuestas{
     box-sizing: border-box;
-
-
     width: 167.32px;
     height: 38px;
-    left: 110px;
-    top: 1346px;
-    border: 0;
+    border: 2px solid $color-secundario; /* tamaño y color de borde */
     
-    /* Secondary */
-    
-    background: #3A8FBE;
+    background: $color-secundario;
     border-radius: 23.0883px;
 
     font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 9.80645px;
-line-height: 12px;
-color: #FFFFFF
-/* identical to box height */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 9.80645px;
+    line-height: 12px;
+    color: #FFFFFF;
 
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+
+&:hover{
+    color: $color-secundario; /* color de fuente hover */
+}
+&::after{
+    content: "";
+    background: #fff; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+}
+&:hover::after{
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    }
 
 
 }
@@ -45,6 +98,36 @@ color: #FFFFFF
     height: 32px;
     border: 1px solid $color-primario;
     border-radius: 21px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+
+    &:before,  &:after {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        left: -50%;
+        background-color: $color-primario-light; /* color de fondo hover */
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+      }
+      &:after {
+        left: 100%;
+      }
+      &:hover {
+        border:0
+      }
+      &:hover:before {
+        left: 0;
+      }
+      &:hover:after {
+        left: 50%;
+      }
 }
 
 .bt-form{
@@ -52,9 +135,37 @@ color: #FFFFFF
     height: 32px;
     background-color: $color-primario;
     color: white;
-    border: 0;
+    border: 2px solid $color-primario; /* tamaño y color de borde */
     border-radius: 19px;
     display: block;
+
+    position: relative;
+        z-index: 1;
+        overflow: hidden;
+        display: inline-block;
+
+        &:hover {
+            color: $color-primario/* color de fuente hover */
+          }
+        &::after {
+            content: "";
+            background: #fff; /* color de fondo hover */
+            position: absolute;
+            z-index: -1;
+            padding: 16px 20px;
+            display: block;
+            border-radius: 50%;
+            left: -50%;
+            right: -50%;
+            top: -150%;
+            bottom: -150%;
+            transform: scale(0, 0);
+            transition: all 0.4s ease;
+          }
+          &:hover::after {
+            transition: all 0.6s ease-out;
+            transform: scale(1, 1);
+          }
     
 }
 
@@ -68,11 +179,41 @@ color: #FFFFFF
     .bt{
         width: 194px;
         height: 52.82px;
+        border: 2px solid $color-primario; /* tamaño y color de borde */
         border-radius: 32px;
         font-size: 16px;
         font-weight: 700;
-    }
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        display: inline-block;
     
+    &:hover{
+        color: $color-primario; /* color de fuente hover */
+    }
+    &::after{
+        content: "";
+        background: #fff; /* color de fondo hover */
+        position: absolute;
+        z-index: -1;
+        padding: 16px 20px;
+        display: block;
+        top: 0;
+        bottom: 0;
+        left: -100%;
+        right: 100%;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+    }
+    &:hover::after{
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+        }
+    }
     .bt-propuestas{
         width: 273px;
         height: 62px;
@@ -81,8 +222,20 @@ color: #FFFFFF
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
+    
 
 
+    }
+
+    .bt-descarga{
+        width: 160px;
+        height: 52.82px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: -0.01em;
     }
 
     .bt-form{
@@ -93,5 +246,6 @@ color: #FFFFFF
         font-weight: 700;
         
     }
+
     
 }

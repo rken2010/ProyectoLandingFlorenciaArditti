@@ -16,9 +16,19 @@
             }
         }
         .titulo{
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             background-image: url("../img/background_sobre-mi.png");
             background-repeat: no-repeat;
             background-position: center;
+            h2{
+                margin-top:15px;
+                margin-bottom: 20px;
+
+            }
 
         }
     }

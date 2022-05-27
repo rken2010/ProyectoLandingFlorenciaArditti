@@ -1,13 +1,33 @@
 @import "../base/margin--padding";
 
-@media screen and (min-width: 768px) { 
+.container_card{
+    display: flex;
+    flex-direction: column;
+   
+    margin: 25px;
+    gap:10px;
+}
+
+@media screen and (min-width: 768px){ 
+    .container_card{
+         
+         display: grid;
+         grid-template-columns:  1fr 1fr;
+         grid-template-rows: 1fr 1fr ;
+        
+         gap: 15px;
+     }
+ }
+
+@media screen and (min-width: 1024px) { 
    .container_card{
         margin-left: $margenes;
         margin-right: $margenes;
         display: grid;
-        grid-template-columns:  1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 10px;
+        grid-template-columns:  1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr ;
+        place-content: center;
+        gap: 45px;
     }
 }
 
@@ -15,7 +35,7 @@
     #servicios {  display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: max-content max-content max-content;
-        gap: 45px 0px;
+        gap: 35px 0px;
         grid-auto-flow: row;
         justify-content: stretch;
         align-content: stretch;

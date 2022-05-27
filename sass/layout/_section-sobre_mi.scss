@@ -16,7 +16,7 @@
         display: grid;
         grid-template-areas: " avatar  titulo";
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 2fr;
+        grid-template-rows: 0.5fr;
     
     .avatar{ grid-area: avatar;}
     .titulo{ grid-area: titulo;}
