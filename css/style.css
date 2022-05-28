@@ -512,6 +512,7 @@ body {
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 25px;
   border-radius: 20px;
+  background-color: white;
 }
 
 .card-servicios h3 {
@@ -1315,7 +1316,8 @@ p {
 }
 
 #servicios {
-  background-color: #B7E0FF;
+  background-color: #F1F9FF;
+  padding: 15px;
 }
 
 .container_card {
@@ -1364,6 +1366,7 @@ p {
 
 @media screen and (min-width: 1024px) {
   #servicios {
+    padding: 20px;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;

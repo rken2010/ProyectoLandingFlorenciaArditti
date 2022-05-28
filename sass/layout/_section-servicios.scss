@@ -1,6 +1,8 @@
 @import "../base/margin--padding";
 #servicios{
-    background-color: #B7E0FF;
+    background-color: #F1F9FF;
+    padding: 15px;
+
 }
 
 .container_card{
@@ -35,6 +37,7 @@
 
 @media screen and (min-width: 1024px) { 
     #servicios {  
+        padding: 20px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: max-content max-content max-content;
