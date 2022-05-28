@@ -581,7 +581,6 @@ body {
 
 @media screen and (min-width: 1024px) {
   .card-servicios {
-    width: 570px;
     height: 300px;
     padding: 25px;
   }
@@ -1315,6 +1314,10 @@ p {
   }
 }
 
+#servicios {
+  background-color: #B7E0FF;
+}
+
 .container_card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1348,6 +1351,8 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
